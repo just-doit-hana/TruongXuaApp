@@ -9,6 +9,7 @@ const Menu: React.FC = () => {
   return (
     <View style={{flex: 1,marginTop:90,marginLeft: 44}}>
       <View style ={style.container}>
+        {/* o trong category menu co Props onPress  */}
       <CategoryMenu icon={icons.home_m} label={constant.screens.home} />
       <CategoryMenu icon={icons.profile_m} label={constant.screens.profile} />
       <CategoryMenu icon={icons.photo} label={constant.screens.photo} />
@@ -22,6 +23,9 @@ const Menu: React.FC = () => {
      <CategoryMenu icon={icons.noti} label={constant.screens.notification} />
      <CategoryMenu icon={icons.mess} label={constant.screens.messages} />
      <CategoryMenu icon={icons.event} label={constant.screens.event} />
+     </View>
+     <View style ={style.container}>
+     <CategoryMenu icon={icons.pages} label={constant.screens.blog} />
      </View>
     </View>
   );
