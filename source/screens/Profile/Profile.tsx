@@ -416,7 +416,7 @@ const Profile: React.FC = () => {
   const [angel, setAngel] = useState(false);
   useEffect(() => {
     tokenForAuthor();
-  }, [isFocuse, angel]);
+  }, [angel]);
 
   const countAlumniInGroup = (idGroup) => {
     let count = 0;
@@ -510,7 +510,7 @@ const Profile: React.FC = () => {
                   <Text style={style.socialText}>{myInfo.facebook}</Text>
                 </View>
               ) : null}
-              {myInfo.instargram != null ? (
+              {myInfo.instagram != null ? (
                 <View>
                   <View style={style.title}>
                     <Text style={style.textTitle}>Instargram</Text>
@@ -623,6 +623,7 @@ const Profile: React.FC = () => {
                         flexDirection: "row",
                         marginTop: 20,
                         marginBottom: 20,
+                        marginRight: 20,
                       }}
                     >
                       <TouchableOpacity
